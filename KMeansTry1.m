@@ -5,8 +5,19 @@ X = csvread('StackOverflowCluster3Feature.csv',1,0);
 
 %# K-means clustering
 %# (K: number of clusters, G: assigned groups, C: cluster centers)
-K = 4;
+Y = pdist(X);
+%squareform(Y)
+Z = linkage(Y);
+dendrogram(Z)
+K = 40;
 [G,C] = kmeans(X, K, 'distance','sqEuclidean', 'start','sample');
+tabulate(G)
+C
+cidx = kmeans(X, K, 'distance','sqEuclidean', 'start','sample');
+s = silhouette(X,cidx);
+mean(s)
+
+
 %# show points and clusters (color-coded)
 clr = lines(K);
 figure, hold on
