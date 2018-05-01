@@ -10,13 +10,14 @@ B = [0];
 for K=1:20
 [G,C, sumd, D] = kmeans(X, K, 'distance','sqEuclidean', 'start','sample','MaxIter',1000);
 
-s = silhouette(X,G);
+%s = silhouette(X,G);
 
-%for k=1:size(D)
-    %A(k) = D(k,G(k))^2;
-%end
-B(K) = mean(s);
+for k=1:size(D)
+    A(k) = D(k,G(k))^2;
+end
+B(K) = mean(A);
 end
 
+x = linspace(0,10);
 plot(B)
 xlabel('Number of Clusters'), ylabel('Mean Silhouette')
