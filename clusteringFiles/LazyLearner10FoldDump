@@ -1,0 +1,62 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.KStar -B 20 -M a
+Relation:     S0databin3noattweightMischaModifid
+Instances:    36592
+Attributes:   18
+              StackOverflowDescribes
+              StackOverflowFoundAnswer
+              StackOverflowCopiedCode
+              StackOverflowJobListing
+              StackOverflowCompanyPage
+              StackOverflowJobSearch
+              StackOverflowNewQuestion
+              StackOverflowAnswer
+              StackOverflowMetaChat
+              StackOverflowAdsRelevant
+              StackOverflowAdsDistracting
+              StackOverflowModeration
+              StackOverflowCommunity
+              StackOverflowHelpful
+              StackOverflowBetter
+              StackOverflowWhatDo
+              StackOverflowMakeMoney
+              StackOverflowSatisfaction
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+KStar Beta Verion (0.1b).
+Copyright (c) 1995-97 by Len Trigg (trigg@cs.waikato.ac.nz).
+Java port to Weka by Abdelaziz Mahoui (am14@cs.waikato.ac.nz).
+
+KStar options : -B 20 -M a 
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       19842               54.225  %
+Incorrectly Classified Instances     16750               45.775  %
+Kappa statistic                          0.2015
+Mean absolute error                      0.3478
+Root mean squared error                  0.444 
+Relative absolute error                 85.1844 %
+Root relative squared error             98.2584 %
+Total Number of Instances            36592     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.783    0.523    0.617      0.783    0.690      0.273    0.706     0.693     '(8.5-inf)'
+                 0.267    0.197    0.345      0.267    0.301      0.077    0.574     0.322     '(7.5-8.5]'
+                 0.306    0.080    0.492      0.306    0.377      0.274    0.740     0.425     '(-inf-7.5]'
+Weighted Avg.    0.542    0.342    0.516      0.542    0.518      0.219    0.676     0.535     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+ 14841  3066  1051 |     a = '(8.5-inf)'
+  6206  2734  1287 |     b = '(7.5-8.5]'
+  3022  2118  2267 |     c = '(-inf-7.5]'

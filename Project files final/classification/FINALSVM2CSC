@@ -1,0 +1,101 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.MultiClassClassifier -M 3 -P -R 2.0 -S 1 -W weka.classifiers.meta.CostSensitiveClassifier -- -cost-matrix "[0.0 3.0; 1.0 0.0]" -S 1 -W weka.classifiers.functions.LibSVM -batch-size 400 -- -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 2000.0 -C 1.0 -E 0.001 -P 0.1 -model /home/shann87/DataAnalytic/weka-3-8-2 -seed 1 -batch-size 400
+Relation:     SOformatnew-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-Cfirst-Lfirst-last-V-M-weka.filters.unsupervised.attribute.RenameNominalValues-R4-NAt least once each week:2-weka.filters.unsupervised.attribute.RenameNominalValues-R4-N2:At least once each week-weka.filters.unsupervised.attribute.RenameNominalValues-R4-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.RenameNominalValues-R6-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.RenameNominalValues-R9,10,11-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.RenameNominalValues-R12-19-NStrongly disagree:0,Disagree:2,Somewhat agree:4,Agree:6,Strongly agree:8-weka.filters.unsupervised.attribute.StringToNominal-R7-weka.filters.unsupervised.attribute.StringToNominal-R8-weka.filters.unsupervised.attribute.StringToNominal-R5-weka.filters.unsupervised.attribute.RenameNominalValues-R5,7,8-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.Copy-R2-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-Clast-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C4-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C6-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C7-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C2-Lfirst-last-V-M-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-Rlast-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-Rlast-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-Rlast-precision6-unset-class-temporarily-weka.filters.supervised.instance.Resample-B1.0-S1-Z100.0
+Instances:    32685
+Attributes:   19
+              StackOverflowDescribes
+              StackOverflowDevices
+              StackOverflowFoundAnswer
+              StackOverflowCopiedCode
+              StackOverflowJobListing
+              StackOverflowCompanyPage
+              StackOverflowJobSearch
+              StackOverflowNewQuestion
+              StackOverflowAnswer
+              StackOverflowMetaChat
+              StackOverflowAdsRelevant
+              StackOverflowAdsDistracting
+              StackOverflowModeration
+              StackOverflowCommunity
+              StackOverflowHelpful
+              StackOverflowBetter
+              StackOverflowWhatDo
+              StackOverflowMakeMoney
+              StackOverflowSatisfaction
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+MultiClassClassifier
+
+Classifier 1, 1 vs 2
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 2000.0 -C 1.0 -E 0.001 -P 0.1 -model /home/shann87/DataAnalytic/weka-3-8-2 -seed 1 -batch-size 400
+
+Classifier Model
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Cost Matrix
+ 0 3
+ 1 0
+
+
+Classifier 2, 1 vs 3
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 2000.0 -C 1.0 -E 0.001 -P 0.1 -model /home/shann87/DataAnalytic/weka-3-8-2 -seed 1 -batch-size 400
+
+Classifier Model
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Cost Matrix
+ 0 3
+ 1 0
+
+
+Classifier 3, 2 vs 3
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.functions.LibSVM -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 2000.0 -C 1.0 -E 0.001 -P 0.1 -model /home/shann87/DataAnalytic/weka-3-8-2 -seed 1 -batch-size 400
+
+Classifier Model
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Cost Matrix
+ 0 3
+ 1 0
+
+
+
+
+Time taken to build model: 106.32 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       26696               81.6766 %
+Incorrectly Classified Instances      5989               18.3234 %
+Kappa statistic                          0.7251
+Mean absolute error                      0.1235
+Root mean squared error                  0.3482
+Relative absolute error                 27.7904 %
+Root relative squared error             73.8631 %
+Total Number of Instances            32685     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.997    0.061    0.891      0.997    0.941      0.912    0.969     0.889     '(-inf-3.333333]'
+                 0.851    0.193    0.688      0.851    0.761      0.630    0.831     0.635     '(3.333333-6.666667]'
+                 0.602    0.021    0.935      0.602    0.733      0.667    0.904     0.809     '(6.666667-inf)'
+Weighted Avg.    0.817    0.092    0.838      0.817    0.811      0.737    0.901     0.778     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+ 10864    31     0 |     a = '(-inf-3.333333]'
+  1168  9271   456 |     b = '(3.333333-6.666667]'
+   166  4168  6561 |     c = '(6.666667-inf)'
+

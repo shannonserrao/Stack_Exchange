@@ -1,0 +1,89 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LibSVM -S 3 -K 3 -D 3 -G 0.0 -R 0.1 -N 0.5 -M 1000.0 -C 1.0 -E 0.001 -P 0.1 -Z -model /home/shannon/weka-3-9-2 -seed 1 -batch-size 1000
+Relation:     SOformatnew-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-Cfirst-Lfirst-last-V-M-weka.filters.unsupervised.attribute.RenameNominalValues-R4-NAt least once each week:2-weka.filters.unsupervised.attribute.RenameNominalValues-R4-N2:At least once each week-weka.filters.unsupervised.attribute.RenameNominalValues-R4-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.RenameNominalValues-R6-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.RenameNominalValues-R9,10,11-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.RenameNominalValues-R12-19-NStrongly disagree:0,Disagree:2,Somewhat agree:4,Agree:6,Strongly agree:8-weka.filters.unsupervised.attribute.StringToNominal-R7-weka.filters.unsupervised.attribute.StringToNominal-R8-weka.filters.unsupervised.attribute.StringToNominal-R5-weka.filters.unsupervised.attribute.RenameNominalValues-R5,7,8-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.Copy-R2-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-Clast-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C4-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C6-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C7-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C2-Lfirst-last-V-M-weka.filters.unsupervised.attribute.NumericToNominal-R2-weka.filters.unsupervised.attribute.NominalToBinary-A-R2-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    32687
+Attributes:   65
+              StackOverflowDescribes
+              StackOverflowDevices=Desktop; iOS app
+              StackOverflowDevices=Desktop; iOS browser; iOS app; Android browser; Android app
+              StackOverflowDevices=Desktop; iOS browser; iOS app
+              StackOverflowDevices=Desktop; iOS browser; Android browser
+              StackOverflowDevices=Desktop
+              StackOverflowDevices=Desktop; Android app
+              StackOverflowDevices=Desktop; Android browser; Android app
+              StackOverflowDevices=Desktop; Android browser
+              StackOverflowDevices=Desktop; iOS browser
+              StackOverflowDevices=Desktop; Other phone browser
+              StackOverflowDevices=Desktop; Android browser; Other phone browser
+              StackOverflowDevices=Desktop; iOS browser; Android browser; Android app
+              StackOverflowDevices=Desktop; iOS browser; iOS app; Android browser; Android app; Other phone browser
+              StackOverflowDevices=Desktop; Android browser; Android app; Other phone browser
+              StackOverflowDevices=Android browser
+              StackOverflowDevices=Desktop; iOS app; Android app
+              StackOverflowDevices=Desktop; iOS app; Android browser; Android app
+              StackOverflowDevices=Desktop; iOS browser; Android browser; Other phone browser
+              StackOverflowDevices=iOS browser; Other phone browser
+              StackOverflowDevices=Desktop; iOS browser; Other phone browser
+              StackOverflowDevices=Other phone browser
+              StackOverflowDevices=iOS browser
+              StackOverflowDevices=Desktop; iOS browser; iOS app; Android browser
+              StackOverflowDevices=Desktop; Android app; Other phone browser
+              StackOverflowDevices=Desktop; iOS browser; Android app
+              StackOverflowDevices=Android app
+              StackOverflowDevices=Android browser; Other phone browser
+              StackOverflowDevices=iOS app; Android app; Other phone browser
+              StackOverflowDevices=Desktop; iOS browser; iOS app; Other phone browser
+              StackOverflowDevices=iOS browser; Android browser; Android app
+              StackOverflowDevices=Desktop; iOS app; Android browser
+              StackOverflowDevices=iOS browser; iOS app
+              StackOverflowDevices=Desktop; iOS browser; Android browser; Android app; Other phone browser
+              StackOverflowDevices=Desktop; iOS browser; iOS app; Android browser; Other phone browser
+              StackOverflowDevices=Desktop; iOS app; Other phone browser
+              StackOverflowDevices=iOS app
+              StackOverflowDevices=iOS browser; Android app
+              StackOverflowDevices=Desktop; iOS browser; iOS app; Android app
+              StackOverflowDevices=iOS app; Android browser; Android app
+              StackOverflowDevices=Android browser; Android app
+              StackOverflowDevices=iOS browser; Android browser
+              StackOverflowDevices=iOS browser; iOS app; Android browser
+              StackOverflowDevices=Desktop; iOS app; Android browser; Other phone browser
+              StackOverflowDevices=iOS browser; iOS app; Android browser; Android app
+              StackOverflowDevices=iOS app; Android browser
+              StackOverflowDevices=Android app; Other phone browser
+              StackOverflowDevices=iOS app; Other phone browser
+              StackOverflowFoundAnswer
+              StackOverflowCopiedCode
+              StackOverflowJobListing
+              StackOverflowCompanyPage
+              StackOverflowJobSearch
+              StackOverflowNewQuestion
+              StackOverflowAnswer
+              StackOverflowMetaChat
+              StackOverflowAdsRelevant
+              StackOverflowAdsDistracting
+              StackOverflowModeration
+              StackOverflowCommunity
+              StackOverflowHelpful
+              StackOverflowBetter
+              StackOverflowWhatDo
+              StackOverflowMakeMoney
+              StackOverflowSatisfaction
+Test mode:    5-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 217.01 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.5425
+Mean absolute error                      0.8701
+Root mean squared error                  1.1504
+Relative absolute error                 80.6741 %
+Root relative squared error             84.1071 %
+Total Number of Instances            32687     
+

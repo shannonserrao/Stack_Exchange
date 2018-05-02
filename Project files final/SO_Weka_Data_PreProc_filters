@@ -1,0 +1,28 @@
+This file has all the filters applied in the Classification/Regression analysis in Weka.This is post the preprocessing part 
+
+Filter and description- 
+Description-D
+Filter: FI
+
+
+1. Discretize- 3 bins equal frequency (if needed)
+weka.filters.unsupervised.attribute.Discretize -F -B 3 -M -1.0 -R last -precision 6 -unset-class-temporarily
+
+2. Copy attribute 
+weka.filters.unsupervised.attribute.Copy -R 2
+
+3. Remove missing values
+weka.filters.unsupervised.instance.RemoveWithValues -S Infinity -C last -L first-last -V -M
+
+4. Discretize
+weka.filters.supervised.attribute.Discretize -R last -precision 6 -spread-attribute-weight
+
+5. Resampling data
+weka.filters.supervised.instance.Resample -B 1.0 -S 1 -Z 100.0
+
+6. Normalization of all numeric attribtues
+weka.filters.unsupervised.attribute.Normalize -S 1.0 -T 0.0
+
+7. Binarization applied for Regression 
+weka.filters.unsupervised.attribute.NominalToBinary -A -R 2 -spread-attribute-weight
+

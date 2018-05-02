@@ -1,5 +1,5 @@
 %# load dataset of 150 instances and 3 dimensions
-X = csvread('StackOverflowCluster3Feature.csv',1,0);
+X = csvread('StackOverflowCluster3Featurev2.csv',1,0);
 %X = meas(:,1:3);
 [numInst,numDims] = size(X);
 
@@ -9,7 +9,7 @@ X = csvread('StackOverflowCluster3Feature.csv',1,0);
 %squareform(Y)
 %Z = linkage(Y, 'average');
 %dendrogram(Z,0)
-K = 2;
+K = 19;
 [G,C] = kmeans(X, K, 'distance','sqEuclidean', 'start','sample');
 tabulate(G)
 C

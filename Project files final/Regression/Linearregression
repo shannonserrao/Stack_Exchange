@@ -1,0 +1,166 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -additional-stats -num-decimal-places 4 -batch-size 1000
+Relation:     SOformatnew-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-Cfirst-Lfirst-last-V-M-weka.filters.unsupervised.attribute.RenameNominalValues-R4-NAt least once each week:2-weka.filters.unsupervised.attribute.RenameNominalValues-R4-N2:At least once each week-weka.filters.unsupervised.attribute.RenameNominalValues-R4-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.RenameNominalValues-R6-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.RenameNominalValues-R9,10,11-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.RenameNominalValues-R12-19-NStrongly disagree:0,Disagree:2,Somewhat agree:4,Agree:6,Strongly agree:8-weka.filters.unsupervised.attribute.StringToNominal-R7-weka.filters.unsupervised.attribute.StringToNominal-R8-weka.filters.unsupervised.attribute.StringToNominal-R5-weka.filters.unsupervised.attribute.RenameNominalValues-R5,7,8-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.Copy-R2-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-Clast-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C4-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C6-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C7-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C2-Lfirst-last-V-M-weka.filters.unsupervised.attribute.NumericToNominal-R2-weka.filters.unsupervised.attribute.NominalToBinary-A-R2-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    32687
+Attributes:   65
+              StackOverflowDescribes
+              StackOverflowDevices=Desktop; iOS app
+              StackOverflowDevices=Desktop; iOS browser; iOS app; Android browser; Android app
+              StackOverflowDevices=Desktop; iOS browser; iOS app
+              StackOverflowDevices=Desktop; iOS browser; Android browser
+              StackOverflowDevices=Desktop
+              StackOverflowDevices=Desktop; Android app
+              StackOverflowDevices=Desktop; Android browser; Android app
+              StackOverflowDevices=Desktop; Android browser
+              StackOverflowDevices=Desktop; iOS browser
+              StackOverflowDevices=Desktop; Other phone browser
+              StackOverflowDevices=Desktop; Android browser; Other phone browser
+              StackOverflowDevices=Desktop; iOS browser; Android browser; Android app
+              StackOverflowDevices=Desktop; iOS browser; iOS app; Android browser; Android app; Other phone browser
+              StackOverflowDevices=Desktop; Android browser; Android app; Other phone browser
+              StackOverflowDevices=Android browser
+              StackOverflowDevices=Desktop; iOS app; Android app
+              StackOverflowDevices=Desktop; iOS app; Android browser; Android app
+              StackOverflowDevices=Desktop; iOS browser; Android browser; Other phone browser
+              StackOverflowDevices=iOS browser; Other phone browser
+              StackOverflowDevices=Desktop; iOS browser; Other phone browser
+              StackOverflowDevices=Other phone browser
+              StackOverflowDevices=iOS browser
+              StackOverflowDevices=Desktop; iOS browser; iOS app; Android browser
+              StackOverflowDevices=Desktop; Android app; Other phone browser
+              StackOverflowDevices=Desktop; iOS browser; Android app
+              StackOverflowDevices=Android app
+              StackOverflowDevices=Android browser; Other phone browser
+              StackOverflowDevices=iOS app; Android app; Other phone browser
+              StackOverflowDevices=Desktop; iOS browser; iOS app; Other phone browser
+              StackOverflowDevices=iOS browser; Android browser; Android app
+              StackOverflowDevices=Desktop; iOS app; Android browser
+              StackOverflowDevices=iOS browser; iOS app
+              StackOverflowDevices=Desktop; iOS browser; Android browser; Android app; Other phone browser
+              StackOverflowDevices=Desktop; iOS browser; iOS app; Android browser; Other phone browser
+              StackOverflowDevices=Desktop; iOS app; Other phone browser
+              StackOverflowDevices=iOS app
+              StackOverflowDevices=iOS browser; Android app
+              StackOverflowDevices=Desktop; iOS browser; iOS app; Android app
+              StackOverflowDevices=iOS app; Android browser; Android app
+              StackOverflowDevices=Android browser; Android app
+              StackOverflowDevices=iOS browser; Android browser
+              StackOverflowDevices=iOS browser; iOS app; Android browser
+              StackOverflowDevices=Desktop; iOS app; Android browser; Other phone browser
+              StackOverflowDevices=iOS browser; iOS app; Android browser; Android app
+              StackOverflowDevices=iOS app; Android browser
+              StackOverflowDevices=Android app; Other phone browser
+              StackOverflowDevices=iOS app; Other phone browser
+              StackOverflowFoundAnswer
+              StackOverflowCopiedCode
+              StackOverflowJobListing
+              StackOverflowCompanyPage
+              StackOverflowJobSearch
+              StackOverflowNewQuestion
+              StackOverflowAnswer
+              StackOverflowMetaChat
+              StackOverflowAdsRelevant
+              StackOverflowAdsDistracting
+              StackOverflowModeration
+              StackOverflowCommunity
+              StackOverflowHelpful
+              StackOverflowBetter
+              StackOverflowWhatDo
+              StackOverflowMakeMoney
+              StackOverflowSatisfaction
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+StackOverflowSatisfaction =
+
+     -0.0885 * StackOverflowDevices=Desktop; iOS app +
+     -0.2052 * StackOverflowDevices=Desktop; iOS browser; iOS app; Android browser; Android app +
+      0.0724 * StackOverflowDevices=Desktop; iOS browser; Android browser +
+     -0.0585 * StackOverflowDevices=Desktop +
+     -0.056  * StackOverflowDevices=Desktop; Android app +
+     -0.0656 * StackOverflowDevices=Desktop; iOS browser +
+     -0.3444 * StackOverflowDevices=Desktop; iOS browser; Other phone browser +
+     -0.4632 * StackOverflowDevices=Desktop; Android app; Other phone browser +
+      0.9627 * StackOverflowDevices=Android app +
+     -1.2443 * StackOverflowDevices=Android browser; Other phone browser +
+      1.8805 * StackOverflowDevices=iOS app; Android app; Other phone browser +
+     -5.2754 * StackOverflowDevices=iOS browser; Android browser; Android app +
+     -0.9842 * StackOverflowDevices=iOS browser; iOS app +
+     -0.8579 * StackOverflowDevices=Desktop; iOS browser; Android browser; Android app; Other phone browser +
+      0.9812 * StackOverflowDevices=Desktop; iOS browser; iOS app; Android browser; Other phone browser +
+     -2.1934 * StackOverflowDevices=iOS app +
+     -2.9453 * StackOverflowDevices=iOS app; Android browser; Android app +
+      4.9991 * StackOverflowDevices=iOS app; Other phone browser +
+      0.606  * StackOverflowFoundAnswer +
+      0.1838 * StackOverflowCopiedCode +
+      0.3056 * StackOverflowJobListing +
+      0.1202 * StackOverflowCompanyPage +
+     -0.0808 * StackOverflowAnswer +
+     -0.1914 * StackOverflowMetaChat +
+      0.218  * StackOverflowAdsRelevant +
+     -1.0521 * StackOverflowModeration +
+      0.4402 * StackOverflowCommunity +
+      1.7969 * StackOverflowHelpful +
+      1.4924 * StackOverflowBetter +
+      0.2373 * StackOverflowWhatDo +
+     -0.2733 * StackOverflowMakeMoney +
+      5.1426
+
+Regression Analysis:
+
+Variable                                                                                         Coefficient     SE of Coef        t-Stat
+StackOverflowDevices=Desktop; iOS app                                                               -0.0885         0.0504        -1.7549
+StackOverflowDevices=Desktop; iOS browser; iOS app; Android browser; Android app                    -0.2052         0.1047        -1.9592
+StackOverflowDevices=Desktop; iOS browser; Android browser                                           0.0724         0.0426         1.6967
+StackOverflowDevices=Desktop                                                                        -0.0585         0.0143        -4.0769
+StackOverflowDevices=Desktop; Android app                                                           -0.056          0.0319        -1.7553
+StackOverflowDevices=Desktop; iOS browser                                                           -0.0656         0.0221        -2.9751
+StackOverflowDevices=Desktop; iOS browser; Other phone browser                                      -0.3444         0.167         -2.062 
+StackOverflowDevices=Desktop; Android app; Other phone browser                                      -0.4632         0.2922        -1.5852
+StackOverflowDevices=Android app                                                                     0.9627         0.4275         2.2518
+StackOverflowDevices=Android browser; Other phone browser                                           -1.2443         0.7995        -1.5564
+StackOverflowDevices=iOS app; Android app; Other phone browser                                       1.8805         0.8007         2.3486
+StackOverflowDevices=iOS browser; Android browser; Android app                                      -5.2754         1.1313        -4.6633
+StackOverflowDevices=iOS browser; iOS app                                                           -0.9842         0.4279        -2.3003
+StackOverflowDevices=Desktop; iOS browser; Android browser; Android app; Other phone browser        -0.8579         0.5057        -1.6965
+StackOverflowDevices=Desktop; iOS browser; iOS app; Android browser; Other phone browser             0.9812         0.6528         1.5031
+StackOverflowDevices=iOS app                                                                        -2.1934         0.4618        -4.7492
+StackOverflowDevices=iOS app; Android browser; Android app                                          -2.9453         1.1316        -2.6028
+StackOverflowDevices=iOS app; Other phone browser                                                    4.9991         1.1314         4.4183
+StackOverflowFoundAnswer                                                                             0.606          0.0324        18.7174
+StackOverflowCopiedCode                                                                              0.1838         0.0264         6.9669
+StackOverflowJobListing                                                                              0.3056         0.036          8.4931
+StackOverflowCompanyPage                                                                             0.1202         0.045          2.6723
+StackOverflowAnswer                                                                                 -0.0808         0.0315        -2.5655
+StackOverflowMetaChat                                                                               -0.1914         0.0452        -4.2373
+StackOverflowAdsRelevant                                                                             0.218          0.0305         7.1408
+StackOverflowModeration                                                                             -1.0521         0.0304       -34.5837
+StackOverflowCommunity                                                                               0.4402         0.025         17.6306
+StackOverflowHelpful                                                                                 1.7969         0.0429        41.9194
+StackOverflowBetter                                                                                  1.4924         0.0398        37.4542
+StackOverflowWhatDo                                                                                  0.2373         0.0239         9.9182
+StackOverflowMakeMoney                                                                              -0.2733         0.0367        -7.4455
+const                                                                                                5.1426         0.0428       120.2336
+
+Degrees of freedom = 32655
+R^2 value = 0.3178
+Adjusted R^2 = 0.31715
+F-statistic = 490.7184
+
+Time taken to build model: 6.09 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.5603
+Mean absolute error                      0.8609
+Root mean squared error                  1.1329
+Relative absolute error                 79.821  %
+Root relative squared error             82.8295 %
+Total Number of Instances            32687     
+

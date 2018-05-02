@@ -1,0 +1,123 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.MultiClassClassifier -M 0 -R 2.0 -S 6 -W weka.classifiers.rules.DecisionTable -- -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"	
+Relation:     SOformatnew-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-Cfirst-Lfirst-last-V-M-weka.filters.unsupervised.attribute.RenameNominalValues-R4-NAt least once each week:2-weka.filters.unsupervised.attribute.RenameNominalValues-R4-N2:At least once each week-weka.filters.unsupervised.attribute.RenameNominalValues-R4-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.RenameNominalValues-R6-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.RenameNominalValues-R9,10,11-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.RenameNominalValues-R12-19-NStrongly disagree:0,Disagree:2,Somewhat agree:4,Agree:6,Strongly agree:8-weka.filters.unsupervised.attribute.StringToNominal-R7-weka.filters.unsupervised.attribute.StringToNominal-R8-weka.filters.unsupervised.attribute.StringToNominal-R5-weka.filters.unsupervised.attribute.RenameNominalValues-R5,7,8-NOnce or twice:2,Several times:4,At least once each week:6,At least once each day:8-weka.filters.unsupervised.attribute.Copy-R2-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-Clast-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C4-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C6-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C7-Lfirst-last-V-M-weka.filters.unsupervised.instance.RemoveWithValues-SInfinity-C2-Lfirst-last-V-M-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-Rlast-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-Rlast-precision6-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-Rlast-precision6-unset-class-temporarily-weka.filters.supervised.instance.Resample-B1.0-S1-Z100.0
+Instances:    32685
+Attributes:   19
+              StackOverflowDescribes
+              StackOverflowDevices
+              StackOverflowFoundAnswer
+              StackOverflowCopiedCode
+              StackOverflowJobListing
+              StackOverflowCompanyPage
+              StackOverflowJobSearch
+              StackOverflowNewQuestion
+              StackOverflowAnswer
+              StackOverflowMetaChat
+              StackOverflowAdsRelevant
+              StackOverflowAdsDistracting
+              StackOverflowModeration
+              StackOverflowCommunity
+              StackOverflowHelpful
+              StackOverflowBetter
+              StackOverflowWhatDo
+              StackOverflowMakeMoney
+              StackOverflowSatisfaction
+Test mode:    10-fold cross-validation
+Evaluation cost matrix:
+ 0 1 1
+ 1 0 1
+ 1 1 0
+
+
+=== Classifier model (full training set) ===
+
+MultiClassClassifier
+
+Classifier 1, using indicator values: Strings: 1 
+Invert: false
+Cols: 1
+
+Decision Table:
+
+Number of training instances: 32685
+Number of Rules : 10757
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 175
+	Merit of best subset found:   99.911
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1,2,3,4,5,8,11,12,13,14,15,16,17,18,19
+
+Classifier 2, using indicator values: Strings: 2 
+Invert: false
+Cols: 2
+
+Decision Table:
+
+Number of training instances: 32685
+Number of Rules : 10736
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 172
+	Merit of best subset found:   98.375
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1,2,3,4,8,9,10,11,12,13,14,15,16,17,18,19
+
+Classifier 3, using indicator values: Strings: 3 
+Invert: false
+Cols: 3
+
+Decision Table:
+
+Number of training instances: 32685
+Number of Rules : 2335
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 150
+	Merit of best subset found:   86    
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 3,4,13,14,15,16,19
+
+
+
+Time taken to build model: 46.42 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       29801               91.1764 %
+Incorrectly Classified Instances      2884                8.8236 %
+Kappa statistic                          0.8676
+Total Cost                            2884     
+Average Cost                             0.0882
+Mean absolute error                      0.2112
+Root mean squared error                  0.2771
+Relative absolute error                 47.5104 %
+Root relative squared error             58.7728 %
+Total Number of Instances            32685     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.073    0.873      1.000    0.932      0.899    1.000     1.000     '(-inf-3.333333]'
+                 0.932    0.040    0.921      0.932    0.926      0.889    0.993     0.983     '(3.333333-6.666667]'
+                 0.803    0.019    0.954      0.803    0.872      0.822    0.958     0.927     '(6.666667-inf)'
+Weighted Avg.    0.912    0.044    0.916      0.912    0.910      0.870    0.984     0.970     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+ 10895     0     0 |     a = '(-inf-3.333333]'
+   317 10159   419 |     b = '(3.333333-6.666667]'
+  1272   876  8747 |     c = '(6.666667-inf)'
+
